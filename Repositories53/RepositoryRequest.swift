@@ -30,8 +30,8 @@ struct RepositoryRequest {
             do{
                 let decoder = JSONDecoder()
                 let repositoryResponse = try decoder.decode(RepositoryResponse.self, from: jsonData)
-                let repositoryDetails = repositoryResponse.response.items
-                completion(.success(repositoryDetails))
+              //  let repositoryDetails = repositoryResponse.response.items
+             //   completion(.success(repositoryDetails))
             } catch {
                 completion(.failure(.canNotProcessData))
             }
